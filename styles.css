@@ -322,9 +322,9 @@ body.dark-theme {
   transition: background .4s; /* for dark mode animation */
 }
 
-.home__perfil {
+.home__john {
   width: 170px;
-  height: 260px;
+  height: 220px;
   background: var(--gradient-color);
   border-radius: 5.5rem;
   overflow: hidden;
@@ -333,7 +333,7 @@ body.dark-theme {
   align-items: flex-end;
 }
 
-.home__perfil img {
+.home__john img {
   width: 150px;
 }
 
