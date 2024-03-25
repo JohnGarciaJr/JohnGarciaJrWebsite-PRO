@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photography Gallery</title>
+        <link rel="stylesheet" href="gallery_styles.css">
+        <script src="gallery.js"></script>
+</head>
+<body>
+
+<h1>Photography Class Assignments and Projects</h1>
+<p>These are just some of the photos that I took in my photography class where I learned about lighting, positioning
+    and spacing, and how to take a good photo. I hope you enjoy them!
+</p>
+<h3>Click on an image to view it in full size</h3>
+
+<div class="gallery">
+    <div class="image">
+        <img src="img2/Garcia001.jpg" alt="Ironman Inside Lighting 1" onclick="openModal('img2/Garcia001.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia002.jpg" alt="Ironman Inside Lighting 2" onclick="openModal('img2/Garcia002.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia003.jpg" alt="Ironman Inside Lighting 3" onclick="openModal('img2/Garcia003.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia004.jpg" alt="Ironman Outside Lighting 4" onclick="openModal('img2/Garcia004.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia005.jpg" alt="Ironman Outside Lighting 5" onclick="openModal('img2/Garcia005.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia006.jpg" alt="Ironman outside Lighting 6" onclick="openModal('img2/Garcia006.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia007.jpg" alt="Starbucks Cup Lighting 1" onclick="openModal('img2/Garcia007.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia008.jpg" alt="Starbucks Cup Lighting 2" onclick="openModal('img2/Garcia008.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia009.jpg" alt="Starbucks Cup Lighting 3" onclick="openModal('img2/Garcia009.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia010.jpg" alt="Bowser Lighting 1" onclick="openModal('img2/Garcia010.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia011.jpg" alt="Bowser Lighting 2" onclick="openModal('img2/Garcia011.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia012.jpg" alt="Bowser Lighting 3" onclick="openModal('img2/Garcia012.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia013.jpg" alt="Bowser Lighting 4" onclick="openModal('img2/Garcia013.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia014.jpg" alt="Product Showcase Placement and Spacing" onclick="openModal('img2/Garcia014.jpg')">
+    </div>
+    <div class="image">
+        <img src="img2/Garcia015.jpg" alt="Product Advertisment Shoot" onclick="openModal('img2/Garcia015.jpg')">
+    </div>
+    <!-- Add more images as needed -->
+</div>
+
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<div class="backHome">
+    <button onclick="location.href='home.html'">Back to Home</button>
+</div>
+
+</body>
+</html>
