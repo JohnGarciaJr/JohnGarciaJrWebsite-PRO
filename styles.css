@@ -323,8 +323,8 @@ body.dark-theme {
 }
 
 .home__john {
-  width: 170px;
-  height: 220px;
+  width: 350px;
+  height: 470px;
   background: var(--gradient-color);
   border-radius: 5.5rem;
   overflow: hidden;
@@ -334,7 +334,7 @@ body.dark-theme {
 }
 
 .home__john img {
-  width: 150px;
+  width: 350px;
 }
 
 .home__shape-wawes, 
