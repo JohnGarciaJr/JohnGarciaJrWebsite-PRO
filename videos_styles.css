@@ -1,8 +1,32 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    color: #333;
+
+}
+
+h3 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin: 10px 150px 10px 150px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+
 /* Basic CSS styling for the gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
 }
 
 .video {
