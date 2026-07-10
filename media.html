@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6GGTV7KSF"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P6GGTV7KSF');
+        </script>
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media_styles.css">
+
+        <title>John Garcia Jr | Photography & Video</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="home.html" class="nav__logo">
+                    John
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="home.html#home" class="nav__link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="home.html#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="home.html#qualification" class="nav__link">
+                                <i class="ri-book-open-line"></i> Qualification
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="home.html#services" class="nav__link">
+                                <i class="ri-briefcase-line"></i> Services
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="home.html#projects" class="nav__link">
+                                <i class="ri-image-line"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="media.html" class="nav__link active-link">
+                                <i class="ri-camera-line"></i> Media
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="design.html" class="nav__link">
+                                <i class="ri-camera-line"></i> Design
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="home.html#contact" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== MEDIA ====================-->
+            <section class="media section" id="media">
+                <h2 class="section__title">Photography & Video</h2>
+                <span class="section__subtitle">Class assignments and personal projects</span>
+
+                <div class="container section__border">
+                    <!-- Tab buttons -->
+                    <div class="media__tabs">
+                        <button class="media__tab-btn active-tab" data-tab="photo-tab" id="tab-btn-photo">
+                            <i class="ri-camera-line"></i> Photography
+                        </button>
+                        <button class="media__tab-btn" data-tab="video-tab" id="tab-btn-video">
+                            <i class="ri-movie-line"></i> Video &amp; Animation
+                        </button>
+                    </div>
+
+                    <!--==================== PHOTOGRAPHY TAB ====================-->
+                    <div class="media__tab-content active-tab-content" id="photo-tab">
+                        <p class="media__description">
+                            A selection of photos from my photography class, where I learned about
+                            lighting, positioning, and spacing. Click any image to view it full size.
+                        </p>
+
+                        <div class="media__gallery">
+                            <div class="media__item" onclick="openImageModal('img2/Garcia001.jpg')">
+                                <img src="img2/Garcia001.jpg" alt="Ironman Inside Lighting 1">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia002.jpg')">
+                                <img src="img2/Garcia002.jpg" alt="Ironman Inside Lighting 2">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia003.jpg')">
+                                <img src="img2/Garcia003.jpg" alt="Ironman Inside Lighting 3">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia004.jpg')">
+                                <img src="img2/Garcia004.jpg" alt="Ironman Outside Lighting 4">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia005.jpg')">
+                                <img src="img2/Garcia005.jpg" alt="Ironman Outside Lighting 5">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia006.jpg')">
+                                <img src="img2/Garcia006.jpg" alt="Ironman Outside Lighting 6">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia007.jpg')">
+                                <img src="img2/Garcia007.jpg" alt="Starbucks Cup Lighting 1">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia008.jpg')">
+                                <img src="img2/Garcia008.jpg" alt="Starbucks Cup Lighting 2">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia009.jpg')">
+                                <img src="img2/Garcia009.jpg" alt="Starbucks Cup Lighting 3">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia010.jpg')">
+                                <img src="img2/Garcia010.jpg" alt="Bowser Lighting 1">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia011.jpg')">
+                                <img src="img2/Garcia011.jpg" alt="Bowser Lighting 2">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia012.jpg')">
+                                <img src="img2/Garcia012.jpg" alt="Bowser Lighting 3">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia013.jpg')">
+                                <img src="img2/Garcia013.jpg" alt="Bowser Lighting 4">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia014.jpg')">
+                                <img src="img2/Garcia014.jpg" alt="Product Showcase Placement and Spacing">
+                            </div>
+                            <div class="media__item" onclick="openImageModal('img2/Garcia015.jpg')">
+                                <img src="img2/Garcia015.jpg" alt="Product Advertisement Shoot">
+                            </div>
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+
+                    <!--==================== VIDEO TAB ====================-->
+                    <div class="media__tab-content" id="video-tab">
+                        <p class="media__description">
+                            A selection of videos I produced, edited, and animated in class, where I learned
+                            about lighting, positioning, and composition. Click any thumbnail to watch.
+                        </p>
+
+                        <div class="media__gallery media__gallery--video">
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/dwgXcB8n3kg?si=1yJdgW3LZ38fsPxw')">
+                                <img src="img3/thumbnail_portfolio.jpg" alt="Portfolio video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/pHheIrXk6hE?si=8qxVBecFrk0pvPhI')">
+                                <img src="img3/thumbnail_pizza.jpg" alt="Pizza video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/AITXn9ZcYdY?si=hdQew-6oRnDWBJAB')">
+                                <img src="img3/thumbnail_funko.jpg" alt="Funko video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/x8VKl_An1yM?si=bODyrnrHqM_xNFzY')">
+                                <img src="img3/thumbnail_corsair.jpg" alt="Corsair video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/2Ube1I_0_eA?si=MOgQRkSTxJvbWr7Y')">
+                                <img src="img3/thumbnail_projectmanagement.jpg" alt="Project management video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/KVLY2Zgh66A?si=U3-737FgklouVtWr')">
+                                <img src="img3/thumbnail_brand.jpg" alt="Brand video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/MJA6GL821pc?si=08yq5jRFJykIZttk')">
+                                <img src="img3/thumbnail_catalyst.jpg" alt="Catalyst video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <div class="media__item media__item--video" onclick="openVideoModal('https://www.youtube.com/embed/QZxXo0bwd8M?si=sn4-ADnJoHAZFS-N')">
+                                <img src="img3/thumbnail_thirds.jpg" alt="Rule of thirds video">
+                                <i class="ri-play-circle-fill media__play-icon"></i>
+                            </div>
+                            <!-- Add more videos as needed -->
+                        </div>
+
+                        <div class="media__youtube">
+                            <a href="https://www.youtube.com/channel/UCs-2Meh_IsFWo1AqDfFIyXg" target="_blank" rel="noopener" class="button">
+                                Check Out My YouTube Channel <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== IMAGE MODAL ====================-->
+        <div id="image-modal" class="media-modal">
+            <span class="media-modal__close" onclick="closeImageModal()">&times;</span>
+            <img class="media-modal__content" id="modalImage" alt="Enlarged photo">
+        </div>
+
+        <!--==================== VIDEO MODAL ====================-->
+        <div id="video-modal" class="media-modal">
+            <span class="media-modal__close" onclick="closeVideoModal()">&times;</span>
+            <iframe class="media-modal__content" id="modalVideo" allowfullscreen title="Video player"></iframe>
+        </div>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">John</h1>
+                <p>Web Developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="home.html#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="home.html#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="home.html#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="media.html" class="footer__link">Media</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/johngarciajr83/" target="_blank" class="footer__social-link" rel="noopener" aria-label="Visit my LinkedIn Profile">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JohnGarciaJr" target="_blank" class="footer__social-link" rel="noopener" aria-label="Visit my Github Profile">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </li>
+                    <!-- Behance link commented out for now - re-enable if portfolio is updated
+                    <li>
+                        <a href="https://www.behance.net/johngarcia32" target="_blank" class="footer__social-link" rel="noopener" aria-label="Visit my Behance Profile">
+                            <i class="ri-behance-line"></i>
+                        </a>
+                    </li>
+                    -->
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright John Garcia Jr 2023 - 2026. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up" rel="noopener" aria-label="Scroll Bar">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="scrollreveal.min.js"></script>
+
+        <!--=============== MEDIA JS ===============-->
+        <script src="media.js"></script>
+    </body>
+</html>

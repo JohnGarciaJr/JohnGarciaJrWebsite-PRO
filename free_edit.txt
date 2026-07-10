@@ -1,0 +1,74 @@
+<!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">What my client are saying</span>
+
+                <div class="container section__border">
+                    <div class="testimonial__container swiper">
+                        <div class="swiper-wrapper">
+                            <!--==================== TESTIMONIAL 1 ====================-->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    "John is simply the best web developer I have ever worked 
+                                    with. He is highly skilled, knowledgeable, and always 
+                                    goes above and beyond to ensure his clients are happy 
+                                    with the final product. He is also very responsive and 
+                                    communicates clearly and effectively throughout the 
+                                    development process. I would not hesitate to recommend 
+                                    John to anyone looking for a web developer." 
+                                </p>
+    
+                                <div>
+                                    <h3 class="testimonial__name">Joseph Buelna</h3>
+                                    <span class="testimonial__subtitle">Client</span>
+                                </div>
+                            </div>
+    
+                            <!--==================== TESTIMONIAL 2 ====================-->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    "John is an incredibly talented web developer. 
+                                    He was able to create a website for my business 
+                                    that not only looks great but is also highly functional. 
+                                    His attention to detail and technical expertise is 
+                                    second to none. I wouldn't hesitate to recommend him to 
+                                    anyone looking for top-notch web development services."
+                                </p>
+    
+                                <div>
+                                    <h3 class="testimonial__name">Angie Taylor</h3>
+                                    <span class="testimonial__subtitle">Client</span>
+                                </div>
+                            </div>
+    
+                            <!--==================== TESTIMONIAL 3 ====================-->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    "John's work is exceptional. He is able to create 
+                                    websites that are not only visually stunning but also 
+                                    highly functional and user-friendly. He is also very 
+                                    patient and took the time to understand my needs and 
+                                    requirements. I highly recommend John for anyone 
+                                    looking for a professional and talented web developer."
+                                </p>
+    
+                                <div>
+                                    <h3 class="testimonial__name">Hector Perez</h3>
+                                    <span class="testimonial__subtitle">Client</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Swiper arrows -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+    
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="assets/img/shape-wawes.svg" alt="" class="testimonial__img">
+            </section>

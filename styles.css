@@ -1207,7 +1207,7 @@ body.dark-theme {
     font-size: 1.5rem;
   }
   .home__info {
-    grid-template-rows: repeat(3, 130px);
+    grid-template-rows: minmax(130px, auto) 130px 130px;
     row-gap: 4rem;
     margin-top: 16rem;
   }

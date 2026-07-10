@@ -1,0 +1,164 @@
+/*=============== DESIGN WORK PAGE ===============*/
+/* Built on top of styles.css - reuses the site's CSS variables, fonts, and spacing scale */
+
+.design__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.design__card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: background .4s, transform .3s, box-shadow .3s;
+}
+
+.design__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px hsla(207, 24%, 8%, .25);
+}
+
+.design__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.design__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.design__tag {
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.design__title {
+  font-family: var(--title-font);
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.design__description {
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  line-height: 1.6;
+}
+
+.design__note {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  font-style: italic;
+}
+
+.design__button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  margin-top: .5rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  transition: gap .3s;
+}
+
+.design__button:hover {
+  gap: .6rem;
+  color: var(--first-color);
+}
+
+/*=============== TEXT-ONLY CARD (e.g. confidential broadcast work) ===============*/
+.design__card--text-only {
+  justify-content: center;
+  min-height: 260px;
+  background-color: var(--container-color);
+  border: 1.5px dashed var(--text-color-light);
+}
+
+.design__card--text-only .design__body {
+  padding: 2rem 1.5rem;
+}
+
+/*=============== MINI GALLERY (e.g. multiple t-shirt designs in one card) ===============*/
+.design__mini-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.design__mini-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+  transition: opacity .3s;
+}
+
+.design__mini-gallery img:hover {
+  opacity: .85;
+}
+
+/*=============== MODAL ===============*/
+.design-modal {
+  display: none;
+  position: fixed;
+  z-index: var(--z-fixed);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: hsla(0, 0%, 0%, .92);
+}
+
+.design-modal__content {
+  margin: 5% auto;
+  display: block;
+  max-width: 85%;
+  max-height: 80vh;
+  border-radius: .5rem;
+}
+
+.design-modal__close {
+  color: hsl(0, 0%, 100%);
+  position: fixed;
+  top: 1.25rem;
+  right: 1.75rem;
+  font-size: 2.25rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  z-index: calc(var(--z-fixed) + 1);
+}
+
+/*=============== DARK THEME ===============*/
+.dark-theme .design__card {
+  background-color: var(--container-color);
+}
+
+.dark-theme .design__card--text-only {
+  border-color: var(--text-color-light);
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 576px) {
+  .design__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-modal__content {
+    max-width: 95%;
+  }
+}
